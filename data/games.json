@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2048",
+    "name": "2048",
+    "category": "puzzle",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/2048_logo.svg",
+    "url": "https://play2048.co/"
+  },
+  {
+    "id": "snake",
+    "name": "Snake",
+    "category": "arcade",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Snake_game.jpg",
+    "url": "https://playsnake.org/"
+  },
+  {
+    "id": "flappy",
+    "name": "Flappy Bird",
+    "category": "arcade",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png",
+    "url": "https://flappybird.io/"
+  }
+]

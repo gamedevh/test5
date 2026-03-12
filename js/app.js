@@ -1,0 +1,40 @@
+let allGames = []
+
+async function loadGames(){
+const res = await fetch("data/games.json")
+allGames = await res.json()
+renderGames(allGames)
+}
+
+function renderGames(games){
+const grid = document.getElementById("gamesGrid")
+grid.innerHTML=""
+
+games.forEach(game=>{
+const card = document.createElement("div")
+card.className="gameCard"
+
+card.innerHTML=`
+<img src="${game.image}">
+<h3>${game.name}</h3>
+`
+
+card.onclick=()=>{
+window.location=`play.html?id=${game.id}`
+}
+
+grid.appendChild(card)
+})
+}
+
+function filterGames(category){
+if(category==="all"){
+renderGames(allGames)
+return
+}
+
+const filtered = allGames.filter(g=>g.category===category)
+renderGames(filtered)
+}
+
+loadGames()
