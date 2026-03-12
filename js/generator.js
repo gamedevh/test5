@@ -6,7 +6,7 @@ id:"game"+i,
 name:"Web Game "+i,
 category:"arcade",
 image:"https://picsum.photos/300/200?random="+i,
-url:"https://playsnake.org/"
+url:"https://rocketgoal.io/"
 })
 }
 
